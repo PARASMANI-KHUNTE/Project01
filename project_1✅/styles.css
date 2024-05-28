@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 300vh ;
+    background-color: black;
+    /* background-color:#eeeeee; */
+    /* background-image: url("space.jpg");
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+} */
+}
+
+nav{
+    width: 100%;
+    background-color: #222831;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+   z-index: 2;
+}
+
+nav .navli{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    list-style: none;
+}
+
+nav .navli .nava{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav .navli .nava:hover{
+    color:#222831 ;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home .landview{
+    border: 1px solid transparent;
+    padding: 60px;
+    border-radius: 50px;
+    /* background-color:#0092ca ; */
+    position: relative;
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+.star{
+    z-index: 0;
+    position: relative;
+    animation: rfloat 2s  infinite alternate ease-in-out;
+}
+.rstar{
+    z-index: 0;
+    position: relative;
+    animation: rfloat 2s  infinite alternate ease-in-out;
+}
+.planet{
+    position: absolute;
+    width: 400px;
+    animation: rotate 70s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes float {
+    from{
+        top: 10px;
+    }
+    to{
+        top:-20px;
+    }
+    
+}
+@keyframes rfloat {
+    from{
+        top: -10px;
+    }
+    to{
+        top:20px;
+    }
+    
+}
+
+.home .landview .actions button{
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    border: none;
+    color: #222831;
+}
+
+.home .landview .actions button:hover{
+    background-color: #222831;
+    color: white;
+}
+
+.projects{
+    color: rgb(204, 184, 184);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 10px;
+
+    
+}
+
+.projects .card{
+
+    padding: 40px;
+    border-radius: 20px;
+    
+}
+.projects .card ul li a{
+    border: 1px solid white;
+    padding: 3px;
+    color: rgb(204, 184, 184);
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+.projects .card ul li{
+    list-style: none;
+}
+
+
+.education{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(207, 186, 186);
+    text-align: center;
+    
+}
+
+.education .school {
+   border: 2px solid white;
+   padding: 20px;
+   
+}
+.education .highschool {
+    border: 2px solid white;
+    padding: 20px;
+    
+ }
+
+ .education .school dt, .education .highschool dt{
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+
+ .contact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+ }
+
+ .contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+ }
+ .contact form label{
+    font-size: small;
+    padding: 10px;
+    color: white;
+ }
+
+ .contact form input{
+    border: none;
+    padding: 10px;
+    width: 440px;
+    height: 30px;
+ }
+
+ .contact form button{
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+ }
+
+ .about{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+ }
+
+ footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+ }
+
+ .about .card{
+    text-align: start;
+ 
+ }
+ .about .card h4{
+    padding: 10px;
+ }
+ .about .card button{
+    border: none;
+    padding: 10px;
+ }
+ .about .card p{
+    padding: 10px;
+ }
+
+ .about .skills li{
+    list-style: none;
+    padding: 5px;
+ }
+ .about .skills li a{
+    padding: 10px;
+    color: rgb(211, 182, 182);
+    text-decoration: none;
+    
+ }
